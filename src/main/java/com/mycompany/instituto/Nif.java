@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package instituto;
+package com.mycompany.instituto;
 
 /**
  *
@@ -19,16 +19,16 @@ public class Nif {
                 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
                 'C', 'K', 'E'};
 
-    private static char calcularLetra(int numero) {
+    public static char calcularLetra(int numero) {
         return LETRAS[numero % 23];
     }
 
-    protected Nif() {
+    public Nif() {
         this.numero = 0;
         this.letra = ' ';
     }
 
-    protected Nif(int numero) {
+    public Nif(int numero) {
         this.numero = numero;
         this.letra = calcularLetra(numero);
     }
