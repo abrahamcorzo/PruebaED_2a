@@ -15,7 +15,7 @@ public class Curso {
     private String nombre;
     private TreeSet<Persona> listaAlumnos;
 
-    protected String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
